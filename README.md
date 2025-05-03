@@ -151,3 +151,8 @@ Checkout to a newly created branch:
 ```
 
 ## Merge
+Merge target BRANCH_NAME into current branch
+```sh
+   git merge BRANCH_NAME
+```
+
