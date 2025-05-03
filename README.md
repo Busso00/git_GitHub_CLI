@@ -97,8 +97,8 @@ Show git variables:
 ## Remotes
 
 ```sh
-git remote add NEW_BRANCH_NAME
-git branch -u origin EW_BRANCH_NAME
+git remote add ...
+git branch -u origin NEW_BRANCH_NAME
 ```
 
 ## Branches
@@ -122,3 +122,16 @@ Push to a the new branch:
 ```sh
     git push -u origin NEW_BRANCH_NAME
 ```
+
+## Merge
+```sh
+    git checkout NEW_BRANCH_NAME
+    git merge main
+```
+
+## Stashing
+```
+
+```
+
+## Pull-Request
