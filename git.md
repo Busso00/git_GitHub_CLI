@@ -22,11 +22,11 @@ cd REPO_NAME
 ```
 Create SSH-keygen create public (and private key)
 ```sh
-    sshe-keygen -t rsa
+sshe-keygen -t rsa
 ```
 Save in an absolute path out of GitHub folder and print it with:
 ```sh
-    cat /PATH/TO/MY/RSAKEY.pub
+cat /PATH/TO/MY/RSAKEY.pub
 ```
 Copy the full output to SSH key add in your profile GitHub SSH's section (from profile -> settings -> SSH & GPG) paste it and save it.
 
@@ -40,53 +40,53 @@ Can upload your SSH key authomatically detected on your system if you use select
 ## Set default editor, name, email
 Set editor, name, email locally (in .gitconfig in current directory):
 ```sh
-    git config core.editor YOUR_EDITOR_EXE
-    git config user.email "your_email@example.com"
-    git config user.name "Name_Surname"
+git config core.editor YOUR_EDITOR_EXE
+git config user.email "your_email@example.com"
+git config user.name "Name_Surname"
 ```
 Show git variables:
 ```sh
-    git config --list
+git config --list
 ```
 
 # Local git (no history)
 
 Create ".git" folder:
 ```sh
-    git init
+git init
 ```
 
 ## Staging area
 Show which file will be considered in next commit:
 ```sh
-    git status
+git status
 ```
 
 ### Add
 Add changes (specified file or folders) into staging area (add to to-commit area):
 ```sh
-    git add .
+git add .
 ```
 or
 ```sh
-    git add DirName/FileName.ext
+git add DirName/FileName.ext
 ```
 ### Remove
 Remove from staging area:
 ```sh
-    git rm --cached DirName/FileName.ext
+git rm --cached DirName/FileName.ext
 ```
 
 ### Reset
 Remove stage changes from staging area (remove from to-commit area):
 ```sh
-    git reset
+git reset
 ```
 
 ## Commits
 Commit with a message (without -m it opens default editor to write message):
 ```sh
-   git commit -m "message that specify your changes"
+git commit -m "message that specify your changes"
 ```
 
 
@@ -98,30 +98,30 @@ NOTE: switch and checkout are similar but checkout is suggested when allowed sin
 ## Pull
 Pull from BRANCH_NAME and merge into current local branch:
 ```sh
-    git pull origin BRANCH_NAME
+git pull origin BRANCH_NAME
 ```
 
 ## Push
 Push to a branch:
 ```sh
-    git push -u origin BRANCH_NAME
+git push -u origin BRANCH_NAME
 ```
 
 ## Branch
 
 List of local branches:
 ```sh
-    git branch
+git branch
 ```
 
 Create new branch (locally):
 ```sh
-    git branch BRANCH_NAME
+git branch BRANCH_NAME
 ```
 
 List of remote and local branches:
 ```sh
-    git branch -a
+git branch -a
 ```
 
 
@@ -130,31 +130,31 @@ List of remote and local branches:
 
 Switch to a branch (locally):
 ```sh
-    git switch BRANCH_NAME
+git switch BRANCH_NAME
 ```
 Switch to a newly created branch:
 ```sh
-    git switch -c NEW_BRANCH_NAME
+git switch -c NEW_BRANCH_NAME
 ```
 
 
 ## Checkout
 Checkout to a specific commit identified by HASH (update files in working directory):
 ```sh
-    git checkout HASH
+git checkout HASH
 ```
 Checkout (switch to a specific branch's last commit):
 ```sh
-    git checkout BRANCH_NAME
+git checkout BRANCH_NAME
 ```
 Checkout to a newly created branch:
 ```sh
-    git checkout -b NEW_BRANCH_NAME
+git checkout -b NEW_BRANCH_NAME
 ```
 
 ## Merge
 Merge target BRANCH_NAME into current branch
 ```sh
-   git merge BRANCH_NAME
+git merge BRANCH_NAME
 ```
 
