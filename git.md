@@ -89,6 +89,12 @@ Commit with a message (without -m it opens default editor to write message):
    git commit -m "message that specify your changes"
 ```
 
+
+# Git workflow
+
+NOTE: switch and checkout are similar but checkout is suggested when allowed since can handle revert to old commit. Next section is for command interactions with remote origin.
+
+
 ## Pull
 Pull from BRANCH_NAME and merge into current local branch:
 ```sh
@@ -100,10 +106,6 @@ Push to a branch:
 ```sh
     git push -u origin BRANCH_NAME
 ```
-
-# Git workflow
-
-NOTE: switch and checkout are similar but checkout is suggested when allowed since can handle revert to old commit.
 
 ## Branch
 
