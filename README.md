@@ -1,6 +1,6 @@
 # Git fundamentals
 
-## NewREPO
+# Local git (no history)
 
 Create ".git" folder:
 ```sh
@@ -37,7 +37,7 @@ Remove stage changes from staging area (remove from to-commit area):
 
 
 
-## Clone
+# Git initialization (clone and auth)
 
 ### HTTPS
 
@@ -93,6 +93,8 @@ Show git variables:
     git config --list
 ```
 
+# Git workflow
+
 ## Branches
 
 List of branches:
@@ -105,9 +107,17 @@ Create new branch (locally):
     git branch NEW_BRANCH_NAME
 ```
 
-Checkout to a branch:
+Push to a branch:
 ```sh
-    git push -u origin dev
+    git push -u origin NEW_BRANCH_NAME
 ```
 
-"COMMIT FOR DEV"
+## Checkout
+Checkout to a specific commit identified by HASH (update files in working directory):
+```sh
+    git checkout HASH
+```
+Checkout (switch to a specific branch's last commit):
+```sh
+    git checkout NEW_BRANCH_NAME
+```
