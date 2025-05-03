@@ -7,7 +7,7 @@ Create ".git" folder
     git init
 ```
 
-### Staging area status
+## Staging area
 Show which file will be considered in next commit
 ```sh
     git status
@@ -43,25 +43,47 @@ Remove stage changes from staging area (remove from to-commit area)
 
 For public repo
 ```sh
-git clone https://github.com/REPO_NAME.git
+git clone https://github.com/USER_NAME/REPO_NAME.git
 ```
+
+To push you need a PAT (Personal Access Token)
+
+#### Personal access tokens
+Get it for a repo you own and share it to who need access.
+Paste it instead of password for an authenticated operation on a repo.
 
 ### SSH
 For private repo
 ```sh
-git clone https://github.com/REPO_NAME.git
+git clone git@github.com:USER_NAME/REPO_NAME.git
 cd REPO_NAME
 ```
-Create SSH-keygen
+Create SSH-keygen create public (and private key)
 ```sh
     sshe-keygen -t rsa
 ```
+Save in an absolute path out of GitHub folder and print it with:
+```sh
+    cat /PATH/TO/MY/RSAKEY.pub
+```
+Copy the full output to SSH key add in your profile GitHub SSH's section (from profile -> settings -> SSH & GPG) 
+
+On your Ubuntu machine run
+```sh
+eval `ssh-agent`
+ssh-add /PATH/TO/MY/RSAKEY
+```
+in order to add key to system keys
+
+
 Test connection
 ```sh
     ssh -T git@github.com
 ```
 
 ### GitHub CLI
+
+
 
 
 ## Commits
@@ -75,6 +97,10 @@ Set editor, name, email locally (in .gitconfig in current directory)
     git config core.editor YOUR_EDITOR_EXE
     git config user.email "your_email@example.com"
     git config user.name "Name Surname"
+```
+Show git variables
+```sh
+    git config --list
 ```
 
 ## Branches
