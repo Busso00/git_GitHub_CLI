@@ -1,4 +1,4 @@
-# Git initialization (clone and auth)
+# Git setup (clone and auth)
 
 ## HTTPS
 
@@ -37,7 +37,7 @@ Install CLI on your machine.
 Can upload your SSH key authomatically detected on your system if you use select SSH.
 
 
-### Set default editor, name, email
+## Set default editor, name, email
 Set editor, name, email locally (in .gitconfig in current directory):
 ```sh
     git config core.editor YOUR_EDITOR_EXE
@@ -74,7 +74,7 @@ or
 ### Remove
 Remove from staging area:
 ```sh
-    git rm --cached
+    git rm --cached DirName/FileName.ext
 ```
 
 ### Reset
@@ -88,61 +88,18 @@ Commit with a message (without -m it opens default editor to write message):
 ```sh
    git commit -m "message that specify your changes"
 ```
-### Set default editor, name, email
-Set editor, name, email locally (in .gitconfig in current directory):
-```sh
-    git config core.editor YOUR_EDITOR_EXE
-    git config user.email "your_email@example.com"
-    git config user.name "Name Surname"
-```
-Show git variables:
-```sh
-    git config --list
-```
 
-# Local git (no history)
-
-Create ".git" folder:
+## Push
+Push to a branch:
 ```sh
-    git init
-```
-
-## Staging area
-Show which file will be considered in next commit:
-```sh
-    git status
-```
-
-### Add
-Add changes (specified file or folders) into staging area (add to to-commit area):
-```sh
-    git add .
-```
-or
-```sh
-    git add DirName/FileName.ext
-```
-### Remove
-Remove from staging area:
-```sh
-    git rm --cached
-```
-
-### Reset
-Remove stage changes from staging area (remove from to-commit area):
-```sh
-    git reset
-```
-
-## Commits
-Commit with a message (without -m it opens default editor to write message):
-```sh
-   git commit -m "message that specify your changes"
+    git push -u origin BRANCH_NAME
 ```
 
 # Git workflow
 
-## Branches
+NOTE: switch and checkout are similar but checkout is suggested when allowed since can handle revert to old commit.
+
+## Branch
 
 List of branches:
 ```sh
@@ -151,23 +108,20 @@ List of branches:
 
 Create new branch (locally):
 ```sh
-    git branch NEW_BRANCH_NAME
+    git branch BRANCH_NAME
 ```
 
-Switch to new branch (locally):
+## Switch
+
+Switch to a branch (locally):
 ```sh
-    git switch NEW_BRANCH_NAME
+    git switch BRANCH_NAME
+```
+Switch to a newly created branch:
+```sh
+    git switch -c NEW_BRANCH_NAME
 ```
 
-Push to a the new branch:
-```sh
-    git push -u origin NEW_BRANCH_NAME
-```
-
-## Merge
-```sh
-    git push -u origin NEW_BRANCH_NAME
-```
 
 ## Checkout
 Checkout to a specific commit identified by HASH (update files in working directory):
@@ -176,5 +130,11 @@ Checkout to a specific commit identified by HASH (update files in working direct
 ```
 Checkout (switch to a specific branch's last commit):
 ```sh
-    git checkout NEW_BRANCH_NAME
+    git checkout BRANCH_NAME
 ```
+Checkout to a newly created branch:
+```sh
+    git checkout -b NEW_BRANCH_NAME
+```
+
+## Merge
