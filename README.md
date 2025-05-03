@@ -2,19 +2,19 @@
 
 ## NewREPO
 
-Create ".git" folder
+Create ".git" folder:
 ```sh
     git init
 ```
 
 ## Staging area
-Show which file will be considered in next commit
+Show which file will be considered in next commit:
 ```sh
     git status
 ```
 
 ### Add
-Add changes (specified file or folders) into staging area (add to to-commit area)
+Add changes (specified file or folders) into staging area (add to to-commit area):
 ```sh
     git add .
 ```
@@ -23,13 +23,13 @@ or
     git add DirName/FileName.ext
 ```
 ### Remove
-Remove from staging area
+Remove from staging area:
 ```sh
     git rm --cached
 ```
 
 ### Reset
-Remove stage changes from staging area (remove from to-commit area)
+Remove stage changes from staging area (remove from to-commit area):
 ```sh
     git reset
 ```
@@ -77,18 +77,18 @@ Can upload your SSH key authomatically detected on your system if you use select
 
 
 ## Commits
-Commit with a message (without -m it opens default editor to write message)
+Commit with a message (without -m it opens default editor to write message):
 ```sh
    git commit -m "message that specify your changes"
 ```
 ### Set default editor, name, email
-Set editor, name, email locally (in .gitconfig in current directory)
+Set editor, name, email locally (in .gitconfig in current directory):
 ```sh
     git config core.editor YOUR_EDITOR_EXE
     git config user.email "your_email@example.com"
     git config user.name "Name Surname"
 ```
-Show git variables
+Show git variables:
 ```sh
     git config --list
 ```
@@ -100,3 +100,12 @@ List of branches:
     git branch
 ```
 
+Create new branch (locally):
+```sh
+    git branch NEW_BRANCH_NAME
+```
+
+Checkout to a branch:
+```sh
+    git push -u origin dev
+```
