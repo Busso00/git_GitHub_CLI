@@ -76,8 +76,6 @@ Install CLI on your machine.
 Can upload your SSH key authomatically detected on your system if you use select SSH.
 
 
-
-
 ## Commits
 Commit with a message (without -m it opens default editor to write message)
 ```sh
@@ -96,4 +94,9 @@ Show git variables
 ```
 
 ## Branches
+
+List of branches:
+```sh
+    git branch
+```
 
