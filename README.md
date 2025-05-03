@@ -109,3 +109,5 @@ Checkout to a branch:
 ```sh
     git push -u origin dev
 ```
+
+"COMMIT FOR DEV"
