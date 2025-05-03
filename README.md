@@ -151,3 +151,4 @@ Checkout to a newly created branch:
 ```
 
 ## Merge
+"""DOCS for MERGE TODO"""
