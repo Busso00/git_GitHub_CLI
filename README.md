@@ -93,6 +93,14 @@ Show git variables:
     git config --list
 ```
 
+
+## Remotes
+
+```sh
+git remote add NEW_BRANCH_NAME
+git branch -u origin EW_BRANCH_NAME
+```
+
 ## Branches
 
 List of branches:
@@ -105,7 +113,12 @@ Create new branch (locally):
     git branch NEW_BRANCH_NAME
 ```
 
-Checkout to a branch:
+Switch to new branch (locally):
 ```sh
-    git push -u origin dev
+    git switch NEW_BRANCH_NAME
+```
+
+Push to a the new branch:
+```sh
+    git push -u origin NEW_BRANCH_NAME
 ```
