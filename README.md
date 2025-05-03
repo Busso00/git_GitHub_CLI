@@ -1,42 +1,3 @@
-# Git fundamentals
-
-# Local git (no history)
-
-Create ".git" folder:
-```sh
-    git init
-```
-
-## Staging area
-Show which file will be considered in next commit:
-```sh
-    git status
-```
-
-### Add
-Add changes (specified file or folders) into staging area (add to to-commit area):
-```sh
-    git add .
-```
-or
-```sh
-    git add DirName/FileName.ext
-```
-### Remove
-Remove from staging area:
-```sh
-    git rm --cached
-```
-
-### Reset
-Remove stage changes from staging area (remove from to-commit area):
-```sh
-    git reset
-```
-
-
-
-
 # Git initialization (clone and auth)
 
 ### HTTPS
@@ -76,11 +37,6 @@ Install CLI on your machine.
 Can upload your SSH key authomatically detected on your system if you use select SSH.
 
 
-## Commits
-Commit with a message (without -m it opens default editor to write message):
-```sh
-   git commit -m "message that specify your changes"
-```
 ### Set default editor, name, email
 Set editor, name, email locally (in .gitconfig in current directory):
 ```sh
@@ -91,6 +47,46 @@ Set editor, name, email locally (in .gitconfig in current directory):
 Show git variables:
 ```sh
     git config --list
+```
+
+# Local git (no history)
+
+Create ".git" folder:
+```sh
+    git init
+```
+
+## Staging area
+Show which file will be considered in next commit:
+```sh
+    git status
+```
+
+### Add
+Add changes (specified file or folders) into staging area (add to to-commit area):
+```sh
+    git add .
+```
+or
+```sh
+    git add DirName/FileName.ext
+```
+### Remove
+Remove from staging area:
+```sh
+    git rm --cached
+```
+
+### Reset
+Remove stage changes from staging area (remove from to-commit area):
+```sh
+    git reset
+```
+
+## Commits
+Commit with a message (without -m it opens default editor to write message):
+```sh
+   git commit -m "message that specify your changes"
 ```
 
 # Git workflow
