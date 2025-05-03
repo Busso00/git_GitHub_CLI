@@ -86,7 +86,7 @@ Set editor, name, email locally (in .gitconfig in current directory):
 ```sh
     git config core.editor YOUR_EDITOR_EXE
     git config user.email "your_email@example.com"
-    git config user.name "Name Surname"
+    git config user.name "Name_Surname"
 ```
 Show git variables:
 ```sh
@@ -135,3 +135,5 @@ Push to a the new branch:
 ```
 
 ## Pull-Request
+
+"ADDITION FOR MAIN"
