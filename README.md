@@ -89,6 +89,12 @@ Commit with a message (without -m it opens default editor to write message):
    git commit -m "message that specify your changes"
 ```
 
+## Pull
+Pull from BRANCH_NAME and merge into current local branch:
+```sh
+    git pull origin BRANCH_NAME
+```
+
 ## Push
 Push to a branch:
 ```sh
@@ -101,7 +107,7 @@ NOTE: switch and checkout are similar but checkout is suggested when allowed sin
 
 ## Branch
 
-List of branches:
+List of local branches:
 ```sh
     git branch
 ```
@@ -110,6 +116,13 @@ Create new branch (locally):
 ```sh
     git branch BRANCH_NAME
 ```
+
+List of remote and local branches:
+```sh
+    git branch -a
+```
+
+
 
 ## Switch
 
