@@ -52,6 +52,7 @@ To push you need a PAT (Personal Access Token)
 Get it for a repo you own and share it to who need access.
 Paste it instead of password for an authenticated operation on a repo.
 
+
 ### SSH
 For private repo
 ```sh
@@ -66,22 +67,13 @@ Save in an absolute path out of GitHub folder and print it with:
 ```sh
     cat /PATH/TO/MY/RSAKEY.pub
 ```
-Copy the full output to SSH key add in your profile GitHub SSH's section (from profile -> settings -> SSH & GPG) 
-
-On your Ubuntu machine run
-```sh
-eval `ssh-agent`
-ssh-add /PATH/TO/MY/RSAKEY
-```
-in order to add key to system keys
-
-
-Test connection
-```sh
-    ssh -T git@github.com
-```
+Copy the full output to SSH key add in your profile GitHub SSH's section (from profile -> settings -> SSH & GPG) paste it and save it.
 
 ### GitHub CLI
+
+Install CLI on your machine.
+
+Can upload your SSH key authomatically detected on your system if you use select SSH.
 
 
 
