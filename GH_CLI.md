@@ -15,3 +15,18 @@ then
 sudo apt update
 sudo apt install gh
 ```
+
+### Login
+```sh
+gh auth login
+```
+
+### Create repo
+```sh
+gh repo create
+```
+
+### Delete repo
+```sh
+gh repo delete
+```
