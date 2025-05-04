@@ -30,3 +30,17 @@ gh repo create
 ```sh
 gh repo delete
 ```
+
+### Fork repo
+Fork allow to create a new repo from one hosted by another OWNER under your own ownership (tree is unchanged)
+NOTE: your push will go to your own repo, to merge to main you need a PR
+```sh
+gh repo fork OWNER/REPO_NAME
+```
+
+### Pull request
+```sh
+gh repo set-default ORIGINAL_OWNER/REPO_NAME
+gh pr create
+```
+
