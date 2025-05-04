@@ -40,6 +40,7 @@ gh repo fork OWNER/REPO_NAME
 
 ### Pull request
 ```sh
+gh repo set-default ORIGINAL_OWNER/REPO_NAME
 gh pr create
 ```
 
