@@ -30,3 +30,10 @@ gh repo create
 ```sh
 gh repo delete
 ```
+
+### Fork repo
+Fork allow to create a new repo from one hosted by another OWNER under your own ownership (tree is unchanged)
+```sh
+gh repo fork OWNER/REPO_NAME
+```
+
