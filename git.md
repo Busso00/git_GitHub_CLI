@@ -100,6 +100,11 @@ Pull from BRANCH_NAME and merge into current local branch:
 ```sh
 git pull origin BRANCH_NAME
 ```
+runs:
+```sh
+git fetch origin BRANCH_NAME
+git merge origin/BRANCH_NAME
+```
 
 ## Push
 Push to a branch:
