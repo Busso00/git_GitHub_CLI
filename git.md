@@ -163,3 +163,7 @@ Merge target BRANCH_NAME into current branch
 git merge BRANCH_NAME
 ```
 
+## Add remote upstream
+```sh
+git remote add UPSTREAM_REPO https://LINK_TO_UPSTREAM_REPO
+```
