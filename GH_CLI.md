@@ -76,3 +76,10 @@ gh issue list
 ```sh
 gh issue delete ISSUE#
 ```
+
+### See active account
+```
+gh auth status
+```
+
+new pr
