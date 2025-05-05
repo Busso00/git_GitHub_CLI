@@ -23,24 +23,56 @@ gh auth login
 
 ### Create repo
 ```sh
-gh repo create
+gh repo create NEW_REPO_NAME
 ```
 
 ### Delete repo
 ```sh
-gh repo delete
+gh repo delete REPO_NAME
+```
+
+### View current repo
+```sh
+gh repo view
 ```
 
 ### Fork repo
 Fork allow to create a new repo from one hosted by another OWNER under your own ownership (tree is unchanged)
 NOTE: your push will go to your own repo, to merge to main you need a PR
 ```sh
-gh repo fork OWNER/REPO_NAME
+gh repo fork ORIGINAL_OWNER/REPO_NAME
 ```
 
-### Pull request
+## Pull request
+### Create PR
 ```sh
 gh repo set-default ORIGINAL_OWNER/REPO_NAME
 gh pr create
 ```
 
+### List PR
+```sh
+gh pr list
+```
+
+### Merge PR
+```sh
+gh pr merge PR#
+```
+
+## Issue
+
+### Create issue
+```sh
+gh issue create --title "TITLE" --body "BODY"
+```
+
+### List issues
+```sh
+gh issue list
+```
+
+### Delete issue
+```sh
+gh issue delete ISSUE#
+```
