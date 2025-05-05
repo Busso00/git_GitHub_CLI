@@ -36,6 +36,8 @@ NOTE: open with code editor to see how to use a particular md feature
 
 
 # Advanced syntax
+NOTE: some features can not be available. 
+
 ### Multiline code
 ```
 multiline
@@ -46,8 +48,3 @@ code
 | -- | -- | -- |
 | v11 | v12 | v1n |
 | v21 | v22 | v2n |
-
-### Strikethrough
-~~  strikethrought ~~
-
-###
