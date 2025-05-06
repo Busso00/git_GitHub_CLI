@@ -167,3 +167,11 @@ git merge BRANCH_NAME
 ```sh
 git remote add UPSTREAM_REPO https://LINK_TO_UPSTREAM_REPO
 ```
+
+## Tagged commit
+```sh
+git add .
+git commit -m "..."
+git tag 1.0.0
+git push --tags
+```
