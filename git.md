@@ -168,11 +168,19 @@ git merge BRANCH_NAME
 git remote add UPSTREAM_REPO https://LINK_TO_UPSTREAM_REPO
 ```
 
-## Tagged commit
+## Tag current commit
 ```sh
 git add .
 git commit -m "..."
-git tag 1.0.0
+git tag VERSION
+git push --tags
+```
+
+## Tag another commit
+```sh
+git checkout HASH
+git tag VERSION
+git checkout LATEST_COMMIT_HASH
 git push --tags
 ```
 
@@ -183,10 +191,10 @@ git checkout tag
 
 ## Delete a tag locally
 ```sh
-git tag -d 1.0.0
+git tag -d VERSION
 ```
 
 ## Delete a tag on remote 
 ```sh
-git push --delete origin 1.0.0
+git push --delete origin VERSION
 ```
