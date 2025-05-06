@@ -175,3 +175,18 @@ git commit -m "..."
 git tag 1.0.0
 git push --tags
 ```
+
+## Checkout to a tagged commit
+```sh
+git checkout tag
+```
+
+## Delete a tag locally
+```sh
+git tag -d 1.0.0
+```
+
+## Delete a tag on remote 
+```sh
+git push --delete origin 1.0.0
+```
