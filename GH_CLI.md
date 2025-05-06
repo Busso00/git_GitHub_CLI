@@ -77,5 +77,8 @@ gh issue list
 gh issue delete ISSUE#
 ```
 
+### See active account
+```sh
+gh auth status
+```
 
-....
