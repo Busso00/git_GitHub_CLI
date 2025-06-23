@@ -15,7 +15,7 @@ Paste it instead of password for an authenticated operation on a repo.
 
 
 ## SSH
-For private repo
+Linux
 ```sh
 git clone git@github.com:USER_NAME/REPO_NAME.git
 cd REPO_NAME
@@ -29,6 +29,18 @@ Save in an absolute path out of GitHub folder and print it with:
 cat /PATH/TO/MY/RSAKEY.pub
 ```
 Copy the full output to SSH key add in your profile GitHub SSH's section (from profile -> settings -> SSH & GPG) paste it and save it.
+
+Windows
+From git bash
+```sh
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+ssh-add ~/.ssh/id_ed25519
+```
+Paste the full output to SSH key add in your profile GitHub SSH's section (from profile -> settings -> SSH & GPG) paste it and save it.
+
+
 
 ## GitHub CLI
 
