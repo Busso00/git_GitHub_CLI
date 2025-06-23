@@ -16,6 +16,11 @@ sudo apt update
 sudo apt install gh
 ```
 
+## Install GitHub CLI Windows
+from <br>
+https://cli.github.com
+
+
 ### Login
 ```sh
 gh auth login
